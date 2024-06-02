@@ -141,9 +141,9 @@ def user_stats(df):
         print('User gender count:\n',df['Gender'].value_counts())
     except:
         print('Gender stats cannot be calculated because Gender does not appear in the dataframe')
-    # Display earliest, most recent, and most common year of birth
+    # Display min, most recent, and most common year of birth
     try:
-        print('Earliest year of birth:',df['Birth Year'].min())
+        print('min year of birth:',df['Birth Year'].min())
         print('Most recent year of birth:',df['Birth Year'].max())
         print('Most common year of birth:',df['Birth Year'].mode()[0])
     except:
