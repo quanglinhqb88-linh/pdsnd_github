@@ -155,7 +155,7 @@ def user_stats(df):
 def display_data(df):
     view_data = input("Would you like to view 5 rows of individual trip data? Enter yes or no?").lower()
     start_loc = 0
-    while (view_data=='yes'):
+    while (view_data!='no'):
         print(df.iloc[start_loc:(start_loc+5),:])
         start_loc += 5
         view_display = input("Do you wish to continue?: ").lower()
